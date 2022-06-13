@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信阳学院成绩录入辅助插件</title>
+    <link rel="stylesheet" href="./css/popup.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/xlsx.full.min.js"></script>
+    <script src="./js/popup.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h3 class="title">成绩录入辅助系统</h3>
+
+        <div class="announcement">
+            <h4>公告</h4>
+            <hr>
+            <p>欢迎各位老师使用信阳学院成绩录入辅助插件，本插件由 <b>19级计科三班李佳乐</b> 进行开发,如在使用过程中发现问题或有不懂的地方可以随时
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=384716045&site=qq&menu=yes"><img border="0"
+                        src="http://wpa.qq.com/pa?p=2:384716045:51" alt="添加QQ" title="添加QQ" /></a>
+                /
+                <a href="" class="wechat">微信</a>
+                <img src="./img/me.jpg" alt="" class="wechat_img">
+                进行咨询
+            </p>
+
+            <h4><a href="https://jhao.me/2022/06/18/%E4%BF%A1%E9%99%A2%E6%88%90%E7%BB%A9%E5%BD%95%E5%85%A5%E8%BE%85%E5%8A%A9%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"
+                    target="_blank">查看使用教程</a></h4>
+        </div>
+
+
+
+
+        <!-- 文件上传 -->
+        <div class="updata_file" id="updata_file">请选择excel文件</div>
+        <input type="file" id="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+
+        <!-- 数据写入 -->
+        <div class="write" id="write">百分比成绩录入</div>
+        <div class="write" id="grade_write">5档成绩录入</div>
+
+        <div class="reward">开发不易，如果觉得好用可以打赏一下作者~</div>
+
+        <img src="./img/reward.png" alt="" class="reward_img">
+    </div>
+</body>
+
+</html>

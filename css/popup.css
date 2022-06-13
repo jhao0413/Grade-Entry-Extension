@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.title{
+    line-height: 50px;
+    text-align: left;
+    color: #FFF;
+    padding-left: 50px;
+    background-color: #00695A;
+}
+
+.announcement{
+    line-height: 30px;
+    text-align: left;
+    padding: 5px 50px 0;
+}
+
+.announcement p{
+    line-height: 24px;
+}
+
+.announcement a{
+    color: #00695A;
+    font-weight: 700;
+}
+
+.wechat_img{
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    width: 200px;
+    height: 200px;
+    display: none;
+    border: 2px solid #00695A;
+}
+
+.wechat:hover + .wechat_img{
+    display: block;
+}
+
+/* 上传文件 */
+#file{
+    display: none;
+}
+
+.updata_file{
+    width: 150px;
+    height: 30px;
+    color: #FFF;
+    margin: 20px auto;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+    transition: all 1s;
+    border-radius: 30px;
+    background-color: #00695A;
+    box-shadow: 5px 5px 10px #00695A;
+}
+
+.updata_file:hover{
+    width: 200px;
+}
+
+/* 数据写入 */
+.write{
+    display: none;
+    width: 150px;
+    height: 30px;
+    color: #FFF;
+    margin: 10px auto;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+    transition: all 1s;
+    border-radius: 30px;
+    background-color: #00695A;
+    box-shadow: 5px 5px 10px #00695A;
+}
+
+.write:hover {
+    width: 200px;
+}
+
+
+.tips{
+    width: 90%;
+    height: 30px;
+    color: #00695A;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px auto;
+    border-radius: 30px;
+    border: 1px solid #00695A;
+    background-color: rgb(25, 144, 255,0.3);
+}
+
+.reward{
+    color: red;
+    cursor: pointer;
+    line-height: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.reward_img{
+    width: 120px;
+    display: block;
+    margin: auto;
+    border: 2px solid #00695A;
+}

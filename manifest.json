@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "信院成绩录入辅助插件",
+    "version": "1.0.4",
+    "description": "信院成绩录入辅助插件",
+    "icons": {
+        "128": "img/logo.png",
+        "48": "img/logo.png",
+        "16": "img/logo.png"
+    },
+    "action": {
+        "default_icon": "img/logo.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/js/*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "js/jquery.min.js",
+                "js/content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}

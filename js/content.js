@@ -43,15 +43,17 @@ $(function () {
 
                 rule = new Map(Object.entries(rule))
 
-                if (rule.has(info['平时成绩'])) {
-                    info['平时成绩'] = rule.get(info['平时成绩'])
-                }
+                if (info) {
+                    if (rule.has(info['平时成绩'])) {
+                        info['平时成绩'] = rule.get(info['平时成绩'])
+                    }
+    
+                    if (rule.has(info['期末成绩'])) {
+                        info['期末成绩'] = rule.get(info['期末成绩'])
+                    }
 
-                if (rule.has(info['期末成绩'])) {
-                    info['期末成绩'] = rule.get(info['期末成绩'])
+                    await input(i,info.平时成绩, info.期末成绩,'select')
                 }
-
-                await input(info.平时成绩, info.期末成绩,'select')
             }
         }
 
@@ -72,18 +74,21 @@ $(function () {
     }
 
     async function input(i,usually, Final,select) {
+        console.log(i,usually,Final);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(6) input:nth-child(2)`).focus()
-        await sleep(500);
+        await sleep(1000);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(6) ${select}`).val(usually)
-        await sleep(500);
+        await sleep(1000);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(6) input:nth-child(2)`).blur()
         $('#save').click()
+        await sleep(1000);
 
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(9) input:nth-child(2)`).focus()
-        await sleep(500);
+        await sleep(1000);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(9) ${select}`).val(Final)
-        await sleep(500);
+        await sleep(1000);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(9) input:nth-child(2)`).blur()
         $('#save').click()
+        await sleep(1000);
     }
 })

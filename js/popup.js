@@ -3,17 +3,6 @@ $(document).ready(function () {
 
     var execl_data;
 
-    $('#test').click(function () {
-        chrome.tabs.query({
-            active: true,
-            currentWindow: true
-        }, function (tabs) {
-            chrome.tabs.sendMessage(tabs[0].id, { type: 'test',  }, function (response) {
-                console.log(response);
-            });
-        });
-    })
-
     $("#updata_file").click(function () {
         $("#file").click();
     });

@@ -5,7 +5,7 @@
 
 .main{
     width: 400px;
-    height: 200px;
+    height: 400px;
     border-radius: 10px;
 }
 
@@ -27,9 +27,13 @@
     line-height: 24px;
 }
 
-.announcement a{
+a{
     color: #00695A;
     font-weight: 700;
+}
+
+h4{
+    text-align: center;
 }
 
 .wechat_img{
@@ -53,17 +57,16 @@
 
 .updata_file{
     width: 150px;
-    height: 30px;
+    height: 40px;
     color: #FFF;
-    margin: 20px auto;
+    margin: 10px auto;
     cursor: pointer;
     font-weight: 600;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     transition: all 1s;
-    border-radius: 30px;
+    border-radius: 5px;
     background-color: #00695A;
-    box-shadow: 5px 5px 10px #00695A;
 }
 
 .updata_file:hover{
@@ -74,17 +77,16 @@
 .write{
     display: none;
     width: 150px;
-    height: 30px;
+    height: 40px;
     color: #FFF;
     margin: 10px auto;
     cursor: pointer;
     font-weight: 600;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     transition: all 1s;
-    border-radius: 30px;
+    border-radius: 5px;
     background-color: #00695A;
-    box-shadow: 5px 5px 10px #00695A;
 }
 
 .write:hover {
@@ -101,19 +103,18 @@
     margin: 10px auto;
     border-radius: 30px;
     border: 1px solid #00695A;
-    background-color: rgb(25, 144, 255,0.3);
+    background-color: rgba(19, 143, 58, 0.3);
 }
 
 .reward{
-    color: red;
-    cursor: pointer;
+    color: #c21f30;
     line-height: 30px;
     font-weight: 600;
     text-align: center;
 }
 
 .reward_img{
-    width: 120px;
+    width: 100px;
     display: block;
     margin: auto;
     border: 2px solid #00695A;

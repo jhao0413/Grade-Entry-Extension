@@ -47,14 +47,15 @@ $(document).ready(function () {
             const zzexcel = window.XLS.read(data, {
                 type: 'binary'
             });
+            console.log(zzexcel.Sheets);
             const result = [];
             for (let i of zzexcel.SheetNames) {
-                console.log(i);
                 const newData = window.XLS.utils.sheet_to_json(zzexcel.Sheets[i]);
+                console.log(newData);
                 result.push(...newData)
             }
             execl_data = result
-            console.log('result', result)
+            console.log('result', execl_data)
             // 解析成功，上传按钮隐藏
             $("#updata_file").hide();
             $("#file").hide();

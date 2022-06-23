@@ -21,7 +21,6 @@ $(function () {
                 if (info) {
                     await input(i,info.平时成绩, info.期末成绩,'input:nth-child(2)')
                 }
-
             }
 
         } else {
@@ -76,19 +75,18 @@ $(function () {
     async function input(i,usually, Final,select) {
         console.log(i,usually,Final);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(6) input:nth-child(2)`).focus()
-        await sleep(1000);
+        await sleep(200);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(6) ${select}`).val(usually)
-        await sleep(1000);
+        await sleep(200);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(6) input:nth-child(2)`).blur()
-        $('#save').click()
-        await sleep(1000);
+        $(`#mylist .griddata-even:nth-child(${i + 1}) .save`).click()
+        await sleep(200);
 
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(9) input:nth-child(2)`).focus()
-        await sleep(1000);
+        await sleep(200);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(9) ${select}`).val(Final)
-        await sleep(1000);
+        await sleep(200);
         $(`#mylist .griddata-even:nth-child(${i + 1}) td:nth-child(9) input:nth-child(2)`).blur()
-        $('#save').click()
-        await sleep(1000);
+        $(`#mylist .griddata-even:nth-child(${i + 1}) .save`).click()
     }
 })
